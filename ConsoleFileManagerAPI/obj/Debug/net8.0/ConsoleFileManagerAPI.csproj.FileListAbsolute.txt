@@ -18,3 +18,4 @@ C:\Users\Sergey\Documents\С# ASP.NET Облачные технологии\C# A
 C:\Users\Sergey\Documents\С# ASP.NET Облачные технологии\C# ASP.NET Project\ConsoleFileManagerAPI\ConsoleFileManagerAPI\obj\Debug\net8.0\ConsoleFileManagerAPI.pdb
 C:\Users\Sergey\Documents\С# ASP.NET Облачные технологии\C# ASP.NET Project\ConsoleFileManagerAPI\ConsoleFileManagerAPI\obj\Debug\net8.0\ConsoleFileManagerAPI.genruntimeconfig.cache
 C:\Users\Sergey\Documents\С# ASP.NET Облачные технологии\C# ASP.NET Project\ConsoleFileManagerAPI\ConsoleFileManagerAPI\obj\Debug\net8.0\ref\ConsoleFileManagerAPI.dll
+C:\Users\Sergey\Documents\С# ASP.NET Облачные технологии\C# ASP.NET Project\ConsoleFileManagerAPI\ConsoleFileManagerAPI\obj\Debug\net8.0\ConsoleFileManagerAPI.sourcelink.json
