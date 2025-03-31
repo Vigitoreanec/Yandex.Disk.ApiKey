@@ -1,0 +1,44 @@
+﻿@using GleamTech.AspNet.Core
+@using GleamTech.FileUltimate.AspNet.UI
+@using YandexDisk.Client.Http
+@using YandexDisk.Client.Protocol
+
+<!DOCTYPE html>
+@{
+    var fileManager = new FileManager
+            {
+                Width = 800,
+                Height = 600,
+                Resizable = true
+            };
+
+            //--------------
+    var clientApi = new DiskHttpApi("y0__xDrtJkFGLijNiCk6JPNEvRjUsH5le-oyOMziushmDklJQl0");
+
+    var folder = await clientApi.MetaInfo.GetInfoAsync(new ResourceRequest
+            {
+                Path = "/"
+            });
+
+    var rootFolder = new FileManagerRootFolder
+            {
+                Name = "Root Folder",
+                Location = @"B:\"
+            };
+    rootFolder.AccessControls.Add(new FileManagerAccessControl
+            {
+                Path = @"\",
+                AllowedPermissions = FileManagerPermissions.Full
+            });
+    
+    fileManager.RootFolders.Add(rootFolder);
+}
+<html>
+<head>
+    <title>File Manager</title>
+    @this.RenderHead(fileManager)
+</head>
+<body>
+    @this.RenderBody(fileManager)
+</body>
+</html>

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFileManagerAPI", "ConsoleFileManagerAPI\ConsoleFileManagerAPI.csproj", "{409E4E1D-171C-49BE-A6D7-64728F1EAFC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleFileManagerAPI", "ConsoleFileManagerAPI\ConsoleFileManagerAPI.csproj", "{409E4E1D-171C-49BE-A6D7-64728F1EAFC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication_FileManagerAPI", "WebApplication_FileManagerAPI\WebApplication_FileManagerAPI.csproj", "{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{409E4E1D-171C-49BE-A6D7-64728F1EAFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{409E4E1D-171C-49BE-A6D7-64728F1EAFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{409E4E1D-171C-49BE-A6D7-64728F1EAFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
