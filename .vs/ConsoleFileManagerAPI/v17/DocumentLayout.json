@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DD5B931B-5FD2-4378-9A23-14FDFAAAE50B}|WForms_App_Filemanager\\WForms_App_Filemanager.csproj|c:\\users\\sergey\\documents\\\u0441# asp.net \u043E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\c# asp.net project\\consolefilemanagerapi\\wforms_app_filemanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD5B931B-5FD2-4378-9A23-14FDFAAAE50B}|WForms_App_Filemanager\\WForms_App_Filemanager.csproj|solutionrelative:wforms_app_filemanager\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{409E4E1D-171C-49BE-A6D7-64728F1EAFC9}|ConsoleFileManagerAPI\\ConsoleFileManagerAPI.csproj|c:\\users\\sergey\\documents\\\u0441# asp.net \u043E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\c# asp.net project\\consolefilemanagerapi\\consolefilemanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{409E4E1D-171C-49BE-A6D7-64728F1EAFC9}|ConsoleFileManagerAPI\\ConsoleFileManagerAPI.csproj|solutionrelative:consolefilemanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}|WebApplication_FileManagerAPI\\WebApplication_FileManagerAPI.csproj|c:\\users\\sergey\\documents\\\u0441# asp.net \u043E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\c# asp.net project\\consolefilemanagerapi\\webapplication_filemanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}|WebApplication_FileManagerAPI\\WebApplication_FileManagerAPI.csproj|solutionrelative:webapplication_filemanagerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}|WebApplication_FileManagerAPI\\WebApplication_FileManagerAPI.csproj|c:\\users\\sergey\\documents\\\u0441# asp.net \u043E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\c# asp.net project\\consolefilemanagerapi\\webapplication_filemanagerapi\\views\\home\\filemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}|WebApplication_FileManagerAPI\\WebApplication_FileManagerAPI.csproj|solutionrelative:webapplication_filemanagerapi\\views\\home\\filemanager.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}|WebApplication_FileManagerAPI\\WebApplication_FileManagerAPI.csproj|c:\\users\\sergey\\documents\\\u0441# asp.net \u043E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\c# asp.net project\\consolefilemanagerapi\\webapplication_filemanagerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E97F3F92-303B-40D5-94E0-EF5A7AA5DC91}|WebApplication_FileManagerAPI\\WebApplication_FileManagerAPI.csproj|solutionrelative:webapplication_filemanagerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\ConsoleFileManagerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleFileManagerAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\ConsoleFileManagerAPI\\Program.cs",
+              "RelativeToolTip": "ConsoleFileManagerAPI\\Program.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAE8AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:14:25.165Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -39,51 +44,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\ConsoleFileManagerAPI\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleFileManagerAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\ConsoleFileManagerAPI\\Program.cs",
-              "RelativeToolTip": "ConsoleFileManagerAPI\\Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAD4AAAALAAAA",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WForms_App_Filemanager\\Form1.cs",
+              "RelativeDocumentMoniker": "WForms_App_Filemanager\\Form1.cs",
+              "ToolTip": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WForms_App_Filemanager\\Form1.cs",
+              "RelativeToolTip": "WForms_App_Filemanager\\Form1.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwBkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T15:14:25.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FileManager.cshtml",
-              "DocumentMoniker": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WebApplication_FileManagerAPI\\Views\\Home\\FileManager.cshtml",
-              "RelativeDocumentMoniker": "WebApplication_FileManagerAPI\\Views\\Home\\FileManager.cshtml",
-              "ToolTip": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WebApplication_FileManagerAPI\\Views\\Home\\FileManager.cshtml",
-              "RelativeToolTip": "WebApplication_FileManagerAPI\\Views\\Home\\FileManager.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T15:12:40.199Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WebApplication_FileManagerAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "WebApplication_FileManagerAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WebApplication_FileManagerAPI\\appsettings.json",
-              "RelativeToolTip": "WebApplication_FileManagerAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T14:48:15.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WebApplication_FileManagerAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication_FileManagerAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Sergey\\Documents\\\u0421# ASP.NET \u041E\u0431\u043B\u0430\u0447\u043D\u044B\u0435 \u0442\u0435\u0445\u043D\u043E\u043B\u043E\u0433\u0438\u0438\\C# ASP.NET Project\\ConsoleFileManagerAPI\\WebApplication_FileManagerAPI\\Program.cs",
-              "RelativeToolTip": "WebApplication_FileManagerAPI\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T14:37:14.753Z",
+              "WhenOpened": "2025-03-31T08:23:16.199Z",
               "EditorCaption": ""
             }
           ]

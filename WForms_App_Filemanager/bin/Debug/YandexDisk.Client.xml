@@ -1,0 +1,1038 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YandexDisk.Client</name>
+    </assembly>
+    <members>
+        <member name="T:YandexDisk.Client.AboutInfo">
+            <summary>
+            Class provided assymbly and file description
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.AboutInfo.#ctor(System.Reflection.Assembly)">
+            <param name="assembly">Assembly for information providing</param>
+        </member>
+        <member name="P:YandexDisk.Client.AboutInfo.ProductTitle">
+            <summary>
+            Return product title from AssemblyTitleAttribute
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.AboutInfo.Version">
+            <summary>
+            Return version of assembly
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.AboutInfo.Client">
+            <summary>
+            Default Info for IDiskApi
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Clients.CommandsClientExtensions">
+            <summary>
+            Extended file commands
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Clients.CommandsClientExtensions.DefaultPullPeriod">
+            <summary>
+            Default pull period for waiting operation.
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.CopyAndWaitAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.CopyFileRequest,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})">
+            <summary>
+            Copy file or folder on Disk from one path to another and wait until operation is done
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.MoveAndWaitAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.MoveFileRequest,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})">
+            <summary>
+            Move file or folder on Disk from one path to another and wait until operation is done
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.DeleteAndWaitAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.DeleteFileRequest,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})">
+            <summary>
+            Delete file or folder on Disk and wait until operation is done
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.EmptyTrashAndWaitAsyncAsync(YandexDisk.Client.Clients.ICommandsClient,System.String,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})">
+            <summary>
+            Empty trash
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.RestoreFromTrashAndWaitAsyncAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.RestoreFromTrashRequest,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})">
+            <summary>
+            Restore files from trash
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.CopyAndWaitAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.CopyFileRequest,System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Copy file or folder on Disk from one path to another and wait until operation is done
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.MoveAndWaitAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.MoveFileRequest,System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Move file or folder on Disk from one path to another and wait until operation is done
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.DeleteAndWaitAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.DeleteFileRequest,System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Delete file or folder on Disk and wait until operation is done
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.EmptyTrashAndWaitAsyncAsync(YandexDisk.Client.Clients.ICommandsClient,System.String,System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Empty trash
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.CommandsClientExtensions.RestoreFromTrashAndWaitAsyncAsync(YandexDisk.Client.Clients.ICommandsClient,YandexDisk.Client.Protocol.RestoreFromTrashRequest,System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Restore files from trash
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Clients.FilesClientExtension">
+            <summary>
+            Extended helpers from uploading and downloading files
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.FilesClientExtension.UploadFileAsync(YandexDisk.Client.Clients.IFilesClient,System.String,System.Boolean,System.IO.Stream,System.Threading.CancellationToken)">
+            <summary>
+            Just upload stream data to Yandex Disk
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.FilesClientExtension.UploadFileAsync(YandexDisk.Client.Clients.IFilesClient,System.String,System.Boolean,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Just upload file from local disk to Yandex Disk
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.FilesClientExtension.DownloadFileAsync(YandexDisk.Client.Clients.IFilesClient,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Get downloaded file from Yandex Disk as stream
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.FilesClientExtension.DownloadFileAsync(YandexDisk.Client.Clients.IFilesClient,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Downloaded data from Yandex Disk to local file
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Clients.ICommandsClient">
+            <summary>
+            Disk file operations
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.ICommandsClient.CreateDictionaryAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Create folder on Disk
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.ICommandsClient.CopyAsync(YandexDisk.Client.Protocol.CopyFileRequest,System.Threading.CancellationToken)">
+            <summary>
+            Copy fileor folder on Disk from one path to another
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.ICommandsClient.MoveAsync(YandexDisk.Client.Protocol.MoveFileRequest,System.Threading.CancellationToken)">
+            <summary>
+            Move file or folder on Disk from one path to another
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.ICommandsClient.DeleteAsync(YandexDisk.Client.Protocol.DeleteFileRequest,System.Threading.CancellationToken)">
+            <summary>
+            Delete file or folder on Disk
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.ICommandsClient.EmptyTrashAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Delete files in trash
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.ICommandsClient.RestoreFromTrashAsync(YandexDisk.Client.Protocol.RestoreFromTrashRequest,System.Threading.CancellationToken)">
+            <summary>
+            Delete files in trash
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.ICommandsClient.GetOperationStatus(YandexDisk.Client.Protocol.Link,System.Threading.CancellationToken)">
+            <summary>
+            Return status of operation
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Clients.IFilesClient">
+            <summary>
+            Files operation client
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IFilesClient.GetUploadLinkAsync(System.String,System.Boolean,System.Threading.CancellationToken)">
+            <summary>
+            Return link for file upload 
+            </summary>
+            <param name="path">Path on Disk for uploading file</param>
+            <param name="overwrite">If file exists it will be overwritten</param>
+            <param name="cancellationToken"></param>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IFilesClient.UploadAsync(YandexDisk.Client.Protocol.Link,System.IO.Stream,System.Threading.CancellationToken)">
+            <summary>
+            Upload file to Disk on link recivied by <see cref="M:YandexDisk.Client.Clients.IFilesClient.GetUploadLinkAsync(System.String,System.Boolean,System.Threading.CancellationToken)"/>
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IFilesClient.GetDownloadLinkAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Return link for file download 
+            </summary>
+            <param name="path">Path to downloading fileon Disk</param>
+            <param name="cancellationToken"></param>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IFilesClient.DownloadAsync(YandexDisk.Client.Protocol.Link,System.Threading.CancellationToken)">
+            <summary>
+            Download file from Disk on link recivied by <see cref="M:YandexDisk.Client.Clients.IFilesClient.GetDownloadLinkAsync(System.String,System.Threading.CancellationToken)"/>
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Clients.IMetaInfoClient">
+            <summary>
+            Files and folder metadata client
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.GetDiskInfoAsync(System.Threading.CancellationToken)">
+            <summary>
+            Returns information about disk
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.GetInfoAsync(YandexDisk.Client.Protocol.ResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Return files or folder metadata
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.GetTrashInfoAsync(YandexDisk.Client.Protocol.ResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Return files or folder metadata in the trash
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.GetFilesInfoAsync(YandexDisk.Client.Protocol.FilesResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Flat file list on Disk
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.GetLastUploadedInfoAsync(YandexDisk.Client.Protocol.LastUploadedResourceRequest,System.Threading.CancellationToken)">
+            <summary>
+            Last uploaded file list on Disk
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.AppendCustomProperties(System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">
+            <summary>
+            Append custom properties to resource
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.PublishFolderAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Publish resource
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Clients.IMetaInfoClient.UnpublishFolderAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Unpublish resource
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.DiskHttpApi">
+            <remarks>
+            This object is thread safe. You should cache it between requests. 
+            </remarks>
+        </member>
+        <member name="P:YandexDisk.Client.Http.DiskHttpApi.BaseUrl">
+            <summary>
+            Default base url to Yandex Disk API
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.DiskHttpApi.#ctor(System.String,YandexDisk.Client.Http.ILogSaver)">
+            <summary>
+            Create new instance of DiskHttpApi. Keep one instance for all requests.
+            </summary>
+            <param name="oauthKey">
+            OAuth Key for authorization on API
+            <see href="https://tech.yandex.ru/disk/api/concepts/quickstart-docpage/"/>
+            </param>
+            <param name="logSaver">Instance of custom logger. It noticed on each request-response API operation.</param>
+        </member>
+        <member name="M:YandexDisk.Client.Http.DiskHttpApi.#ctor(System.String,System.String,YandexDisk.Client.Http.ILogSaver,YandexDisk.Client.Http.IHttpClient)">
+            <summary>
+            Create new instance of DiskHttpApi. Keep one instance for all requests.
+            </summary>
+            <param name="baseUrl">Base url to Yandex Disk API.</param>
+            <param name="oauthKey">
+            OAuth Key for authorization on API
+            <see href="https://tech.yandex.ru/disk/api/concepts/quickstart-docpage/"/>
+            </param>
+            <param name="logSaver">Instance of custom logger.</param>
+            <param name="httpClient"></param>
+        </member>
+        <member name="P:YandexDisk.Client.Http.DiskHttpApi.Files">
+            <summary>
+            Uploading and downloading file operation
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.DiskHttpApi.MetaInfo">
+            <summary>
+            Getting files and folders metadata  
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.DiskHttpApi.Commands">
+            <summary>
+            Manipulating with existing files and folders 
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.DiskHttpApi.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.IHttpClient">
+            <summary>
+            Abstract request sender for testing purpose
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            Send http-request to API
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.ILogSaver">
+            <summary>
+            Logger noticed on each request-response API operation.
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.ILogSaver.SaveLog(YandexDisk.Client.Http.RequestLog,YandexDisk.Client.Http.ResponseLog)">
+            <summary>
+            Trigered on each request
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.RequestLog">
+            <summary>
+            Describe output data of http request 
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.RequestLog.Uri">
+            <summary>
+            Request Url
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.RequestLog.Headers">
+            <summary>
+            Sent headers to Yandex
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.RequestLog.Body">
+            <summary>
+            Sent request body to Yandex
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.RequestLog.StartedAt">
+            <summary>
+            Time of request started
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.ResponseLog">
+            <summary>
+            Describe input data of http request 
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.ResponseLog.Body">
+            <summary>
+            Response body from Yandex
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.ResponseLog.Headers">
+            <summary>
+            Response headers from Yandex
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.ResponseLog.Exception">
+            <summary>
+            Exception text if it have been risen
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.ResponseLog.StatusCode">
+            <summary>
+            Http status code from Yandex
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Http.ResponseLog.Duration">
+            <summary>
+            Request-response time duration in milliseconds
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.Serialization.CamelCasePropertyResolver.ToCamelCase(System.String)">
+            <summary>
+            From Newtonsoft.Json
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.Serialization.SnakeCasePropertyResolver.ToSnakeCase(System.String)">
+            <summary>
+            From https://gist.github.com/roryf/1042502
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.Serialization.IObjectSerializer">
+            <summary>
+            Интерфейс настраиваемого сереализатора
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.Serialization.QueryParamsSerializer">
+            <summary>
+            Сериализатор объекта в строку запроса в стиле MVC Framework
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.Serialization.QueryParamsSerializer.ParamBuilder">
+            <summary>
+            Строит список параметров по именам
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.Serialization.QueryParamsSerializer.ParamBuilder.#ctor(System.Object,System.Type,System.String,System.Collections.Generic.IEnumerable{System.Type})">
+            <summary>
+            Постройка дерева
+            </summary>
+            <param name="obj">Корневой объект для построения дерева</param>
+            <param name="type">Тип объекта</param>
+            <param name="prefix">Корневой префикс</param>
+            <param name="simpleTypes">Типы, разбор членов которых не требуется</param>
+        </member>
+        <member name="P:YandexDisk.Client.Http.Serialization.QueryParamsSerializer.ParamBuilder.SimpleTypes">
+            <summary>
+            Список типов не требующих сериализации
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.Http.Serialization.QueryParamsSerializer.ParamBuilder.BuildParameters(System.String,System.Object,System.Type)">
+            <summary>
+            Построение списка параметров
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Http.Serialization.QueryParamsSerializer.FunctionSerializer">
+            <summary>
+            Функциональный сериалайзер
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.IDiskApi">
+            <summary>
+            Definition of all methods od Yandex Disk API
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.IDiskApi.Files">
+            <summary>
+            Uploading and downloading file operation
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.IDiskApi.MetaInfo">
+            <summary>
+            Getting files and folders metadata  
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.IDiskApi.Commands">
+            <summary>
+            Manipulating with existing files and folders 
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.CopyFileRequest">
+            <summary>
+            Request of coping file on Disk
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.CopyFileRequest.From">
+            <summary>
+            Путь к копируемому ресурсу. Например, %2Ffoo%2Fphoto.png.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.CopyFileRequest.Path">
+            <summary>
+            Путь к создаваемой копии ресурса. Например, %2Fbar%2Fphoto.png.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.CopyFileRequest.Overwrite">
+            <summary>
+            Признак перезаписи. Учитывается, если ресурс копируется в папку, в которой уже есть ресурс с таким именем.
+            Допустимые значения:
+            true — удалять файлы с совпадающими именами и записывать копируемые файлы.
+            false — используется по умолчанию. Указывает не перезаписывать файлы и отменить копирование.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.DeleteFileRequest">
+            <summary>
+            Request of deleting file on Disk
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.DeleteFileRequest.Path">
+            <summary>
+            Путь к новому положению ресурса. Например, %2Fbar%2Fphoto.png.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.DeleteFileRequest.Permanently">
+            <summary>
+            Признак безвозвратного удаления. Поддерживаемые значения:
+            false — удаляемый файл или папка перемещаются в Корзину(используется по умолчанию).
+            true — файл или папка удаляются без помещения в Корзину.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.Disk">
+            <summary>
+            Данные о свободном и занятом пространстве на Диск
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Disk.TrashSize">
+            <summary>
+            Объем файлов, находящихся в Корзине, в байтах.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Disk.TotalSpace">
+            <summary>
+            Общий объем Диска, доступный пользователю, в байтах.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Disk.UsedSpace">
+            <summary>
+            Объем файлов, уже хранящихся на Диске, в байтах.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Disk.SystemFolders">
+            <summary>
+            Абсолютные адреса системных папок Диска. Имена папок зависят от языка интерфейса пользователя в момент создания персонального Диска. 
+            Например, для англоязычного пользователя создается папка Downloads, для русскоязычного — Загрузки и т. д.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.SystemFolders">
+            <summary>
+            Системные папки Диска
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.SystemFolders.Applications">
+            <summary>
+            папка для файлов приложений
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.SystemFolders.Downloads">
+            <summary>
+            папка для файлов, загруженных из интернета(не с устройства пользователя).
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.ErrorDescription">
+            <summary>
+            Дополнительное описание ошибки
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ErrorDescription.Description">
+            <summary>
+            Подробное описание ошибки в помощь разработчику.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ErrorDescription.Error">
+            <summary>
+            Идентификатор ошибки для программной обработки.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.FilesResourceList">
+            <summary>
+            Плоский список всех файлов на Диске в алфавитном порядке.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.FilesResourceList.Items">
+            <summary>
+            Массив ресурсов (Resource), содержащихся в папке.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.FilesResourceList.Limit">
+            <summary>
+            Максимальное количество элементов в массиве items, заданное в запросе.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.FilesResourceList.Offset">
+            <summary>
+            Смещение начала списка от первого ресурса в папке.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.FilesResourceRequest">
+            <summary>
+            Запрос метаинформации
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.FilesResourceRequest.MediaType">
+            <summary>
+            Тип файлов, которые нужно включить в список. Диск определяет тип каждого файла при загрузке.
+            </summary>
+            <see>https://tech.yandex.ru/disk/api/reference/all-files-docpage/</see>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.FilesResourceRequest.Limit">
+            <summary>
+            Количество ресурсов, вложенных в папку, описание которых следует вернуть в ответе (например, для постраничного вывода).
+            Значение по умолчанию — 20.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.FilesResourceRequest.Offset">
+            <summary>
+            Количество вложенных ресурсов с начала списка, которые следует опустить в ответе (например, для постраничного вывода).
+            Допустим, папка /foo содержит три файла.Если запросить метаинформацию о папке с параметром offset= 1 и сортировкой по умолчанию, API Диска вернет только описания второго и третьего файла.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.LastUploadedResourceList">
+            <summary>
+            Список последних добавленных на Диск файлов, отсортированных по дате загрузки (от поздних к ранним).
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.LastUploadedResourceList.Items">
+            <summary>
+            Массив ресурсов (Resource), содержащихся в папке.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.LastUploadedResourceList.Limit">
+            <summary>
+            Максимальное количество элементов в массиве items, заданное в запросе.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.LastUploadedResourceRequest">
+            <summary>
+            Запрос метаинформации
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.LastUploadedResourceRequest.MediaType">
+            <summary>
+            Тип файлов, которые нужно включить в список. Диск определяет тип каждого файла при загрузке.
+            </summary>
+            <see>https://tech.yandex.ru/disk/api/reference/all-files-docpage/</see>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.LastUploadedResourceRequest.Limit">
+            <summary>
+            Количество ресурсов, вложенных в папку, описание которых следует вернуть в ответе (например, для постраничного вывода).
+            Значение по умолчанию — 20.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.Link">
+            <summary>
+            Объект содержит URL для запроса метаданных ресурса.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Link.Href">
+            <summary>
+            URL. Может быть шаблонизирован, см. ключ templated.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Link.Method">
+            <summary>
+            HTTP-метод для запроса URL из ключа href.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Link.Templated">
+            <summary>
+            Признак URL, который был шаблонизирован согласно RFC 6570. Возможные значения:
+            «true» — URL шаблонизирован: прежде чем отправлять запрос на этот адрес, следует указать нужные значения параметров вместо значений в фигурных скобках.
+            «false» — URL может быть запрошен без изменений.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.MediaType">
+            <summary>
+            Возможные типы медиаданных
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Audio">
+            <summary>
+             аудио-файлы.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Backup">
+            <summary>
+            файлы резервных и временных копий.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Book">
+            <summary>
+            электронные книги.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Compressed">
+            <summary>
+            сжатые и архивированные файлы.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Data">
+            <summary>
+            файлы с базами данных.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Development">
+            <summary>
+            файлы с кодом (C++, Java, XML и т. п.), а также служебные файлы IDE.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Diskimage">
+            <summary>
+            образы носителей информации в различных форматах и сопутствующие файлы (например, CUE).
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Document">
+            <summary>
+            документы офисных форматов (Word, OpenOffice и т. п.).
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Encoded">
+            <summary>
+            зашифрованные файлы.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Executable">
+            <summary>
+            исполняемые файлы.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Flash">
+            <summary>
+            файлы с флэш-видео или анимацией.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Font">
+            <summary>
+            файлы шрифтов.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Image">
+            <summary>
+            изображения.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Settings">
+            <summary>
+            файлы настроек для различных программ.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Spreadsheet">
+            <summary>
+            файлы офисных таблиц (Numbers, Lotus).
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Text">
+            <summary>
+            текстовые файлы.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Unknown">
+            <summary>
+            неизвестный тип.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Video">
+            <summary>
+            видео-файлы.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.MediaType.Web">
+            <summary>
+            различные файлы, используемые браузерами и сайтами (CSS, сертификаты, файлы закладок).
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.MoveFileRequest">
+            <summary>
+            Request of moving file on Disk
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.MoveFileRequest.From">
+            <summary>
+            Путь к перемещаемому ресурсу. Например, %2Ffoo%2Fphoto.png.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.MoveFileRequest.Path">
+            <summary>
+            Путь к новому положению ресурса. Например, %2Fbar%2Fphoto.png.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.MoveFileRequest.Overwrite">
+            <summary>
+            Признак перезаписи. Учитывается, если ресурс копируется в папку, в которой уже есть ресурс с таким именем.
+            Допустимые значения:
+            true — удалять файлы с совпадающими именами и записывать копируемые файлы.
+            false — используется по умолчанию. Указывает не перезаписывать файлы и отменить копирование.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.Operation">
+            <summary>
+            Статус операции. Операции запускаются, когда вы копируете, перемещаете или удаляете непустые папки. 
+            URL для запроса статуса возвращается в ответ на такие запросы.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Operation.Status">
+            <summary>
+            Статус операции
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.OperationStatus">
+            <summary>
+            Возможные статусы опреаций
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.OperationStatus.Success">
+            <summary>
+            Операция успешно завершена.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.OperationStatus.Failure">
+            <summary>
+            Операцию совершить не удалось, попробуйте повторить изначальный запрос копирования, перемещения или удаления.
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.OperationStatus.InProgress">
+            <summary>
+            Операция начата, но еще не завершена.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.ProtocolObjectResponse">
+            <summary>
+            Base class of protocol object
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ProtocolObjectResponse.HttpStatusCode">
+            <summary>
+            Http status code of response from Yandex Disk API
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.PublicResourcesList">
+            <summary>
+            Список опубликованных файлов на Диске.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.PublicResourcesList.Items">
+            <summary>
+            Массив ресурсов (Resource), содержащихся в папке.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.PublicResourcesList.Type">
+            <summary>
+            Тип ресурса:
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.PublicResourcesList.Limit">
+            <summary>
+            Максимальное количество элементов в массиве items, заданное в запросе.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.PublicResourcesList.Offset">
+            <summary>
+            Смещение начала списка от первого ресурса в папке.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.Resource">
+            <summary>
+            Описание ресурса, мета-информация о файле или папке. Включается в ответ на запрос метаинформации.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.PublicKey">
+            <summary>
+            Ключ опубликованного ресурса.
+            Включается в ответ только если указанный файл или папка опубликован.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Name">
+            <summary>
+            Имя ресурса.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.PublicUrl">
+            <summary>
+            Ссылка на опубликованный ресурс.
+            Включается в ответ только если указанный файл или папка опубликован.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.OriginPath">
+            <summary>
+            Путь к ресурсу до перемещения в Корзину.
+            Включается в ответ только для запроса метаинформации о ресурсе в Корзине.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Path">
+            <summary>
+            Полный путь к ресурсу на Диске.
+            В метаинформации опубликованной папки пути указываются относительно самой папки.Для опубликованных файлов значение ключа всегда «/».
+            Для ресурса, находящегося в Корзине, к атрибуту может быть добавлен уникальный идентификатор(например, trash:/foo_1408546879). С помощью этого идентификатора ресурс можно отличить от других удаленных ресурсов с тем же именем.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Preview">
+            <summary>
+            Ссылка на уменьшенное изображение из файла (превью). Включается в ответ только для файлов поддерживаемых графических форматов.
+            </summary>
+            <remarks>Запросить превью можно только с OAuth-токеном пользователя, имеющего доступ к самому файлу.</remarks>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Md5">
+            <summary>
+            MD5-хэш файла.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Type">
+            <summary>
+            Тип ресурса:
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.MimeType">
+            <summary>
+            MIME-тип файла.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Size">
+            <summary>
+            Размер файла.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Created">
+            <summary>
+            Дата и время создания ресурса, в формате ISO 8601.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Modified">
+            <summary>
+            Дата и время изменения ресурса, в формате ISO 8601.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.CustomProperties">
+            <summary>
+            Объект со всеми атрибутами, заданными с помощью запроса Добавление метаинформации для ресурса. 
+            Содержит только ключи вида имя:значение (объекты или массивы содержать не может).
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.Resource.Embedded">
+            <summary>
+            Ресурсы, непосредственно содержащиеся в папке (содержит объект ResourceList).
+            Включается в ответ только при запросе метаинформации о папке.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.ResourceType">
+            <summary>
+            Тип ресурсов на Диске
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.ResourceType.Dir">
+            <summary>
+            Папка
+            </summary>
+        </member>
+        <member name="F:YandexDisk.Client.Protocol.ResourceType.File">
+            <summary>
+            Файл
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.ResourceList">
+            <summary>
+            Список ресурсов, содержащихся в папке. Содержит объекты Resource и свойства списка.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceList.Sort">
+            <summary>
+            Поле, по которому отсортирован список.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceList.PublicKey">
+            <summary>
+            Ключ опубликованной папки, в которой содержатся ресурсы из данного списка.
+            Включается только в ответ на запрос метаинформации о публичной папке.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceList.Items">
+            <summary>
+            Массив ресурсов (Resource), содержащихся в папке.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceList.Path">
+            <summary>
+            Путь к папке, чье содержимое описывается в данном объекте ResourceList.
+            Для публичной папки значение атрибута всегда равно «/».
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceList.Limit">
+            <summary>
+            Максимальное количество элементов в массиве items, заданное в запросе.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceList.Offset">
+            <summary>
+            Смещение начала списка от первого ресурса в папке.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceList.Total">
+            <summary>
+            Общее количество ресурсов в папке.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.ResourceRequest">
+            <summary>
+            Запрос метаинформации
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceRequest.Sort">
+            <summary>
+            Атрибут, по которому сортируется список ресурсов, вложенных в папку. В качестве значения можно указывать имена следующих ключей объекта Resource:
+            name(имя ресурса);
+            path(путь к ресурсу на Диске);
+            created(дата создания ресурса);
+            modified(дата изменения ресурса);
+            size(размер файла).
+            Для сортировки в обратном порядке добавьте дефис к значению параметра, например: sort=-name
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceRequest.Path">
+            <summary>
+            Путь к нужному ресурсу относительно корневого каталога Диска. Путь к ресурсу в Корзине следует указывать относительно корневого каталога Корзины.
+            Путь в значении параметра следует кодировать в URL-формате.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceRequest.Limit">
+            <summary>
+            Количество ресурсов, вложенных в папку, описание которых следует вернуть в ответе (например, для постраничного вывода).
+            Значение по умолчанию — 20.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.ResourceRequest.Offset">
+            <summary>
+            Количество вложенных ресурсов с начала списка, которые следует опустить в ответе (например, для постраничного вывода).
+            Допустим, папка /foo содержит три файла.Если запросить метаинформацию о папке с параметром offset= 1 и сортировкой по умолчанию, API Диска вернет только описания второго и третьего файла.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.Protocol.RestoreFromTrashRequest">
+            <summary>
+            Request of coping file on Disk
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.RestoreFromTrashRequest.Path">
+            <summary>
+            Путь к создаваемой копии ресурса. Например, %2Fbar%2Fphoto.png.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.RestoreFromTrashRequest.Name">
+            <summary>
+            Новое имя восстанавливаемого ресурса. Например, selfie.png.
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.Protocol.RestoreFromTrashRequest.Overwrite">
+            <summary>
+            Признак перезаписи. Учитывается, если ресурс восстанавливается в папку, в которой уже есть ресурс с таким именем.
+            Допустимые значения:
+            true — удалять файлы с совпадающими именами и записывать восстанавливаемые файлы.
+            false — используется по умолчанию.Указывает не перезаписывать файлы и отменить восстановление.
+            </summary>
+        </member>
+        <member name="T:YandexDisk.Client.YandexApiException">
+            <summary>
+            Exception provide any exceptions risen on yandex server 
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.YandexApiException.StatusCode">
+            <summary>
+            Http status code from Yandex server
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.YandexApiException.ReasonPhrase">
+            <summary>
+            Reason phrase from Yandex server
+            </summary>
+        </member>
+        <member name="P:YandexDisk.Client.YandexApiException.Error">
+            <summary>
+            Error description from Yandex
+            </summary>
+        </member>
+        <member name="M:YandexDisk.Client.YandexApiException.ToString">
+            <summary>
+            Format current exception to string
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:YandexDisk.Client.NotAuthorizedException">
+            <summary>
+            Exception provide authorization errors on yandex server 
+            </summary>
+        </member>
+    </members>
+</doc>

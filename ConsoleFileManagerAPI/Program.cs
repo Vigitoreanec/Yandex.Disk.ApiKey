@@ -4,34 +4,33 @@ using YandexDisk.Client.Protocol;
 
 Console.WriteLine("Server is Run");
 
-async Task AddFiles(IDiskApi api) // добавление и создание папки
-{
-    const string fileFolder = "NewFolder_JPG";
-    var newfolder = await api.MetaInfo.GetInfoAsync(new ResourceRequest
-    {
-        Path = "/",
-    });
+//async Task AddFiles(IDiskApi api) // добавление и создание папки
+//{
+//    const string fileFolder = "NewFolder_JPG";
+//    var newfolder = await api.MetaInfo.GetInfoAsync(new ResourceRequest
+//    {
+//        Path = "/",
+//    });
 
-    if (!newfolder.Embedded.Items.Any(i => i.Type == ResourceType.Dir && i.Name.Equals(fileFolder)))
-    {
-        await api.Commands.CreateDictionaryAsync("/" + fileFolder);
-    }
-    if (Directory.Exists(fileFolder))
-    {
-        var files = Directory.GetFiles(Environment.CurrentDirectory, "*.jpg"); // добавление
-        foreach (var file in files)
-        {
-            var link = await api.Files.GetUploadLinkAsync("/" + fileFolder + "/" + Path.GetFileName(file), overwrite: false); // без перезаписи
-            Console.WriteLine(link);
-            using (var fileStream = File.OpenRead(file))
-            {
-                await api.Files.UploadAsync(link, fileStream);
-            }
-        }
-    }
-}
+//    if (!newfolder.Embedded.Items.Any(i => i.Type == ResourceType.Dir && i.Name.Equals(fileFolder)))
+//    {
+//        await api.Commands.CreateDictionaryAsync("/" + fileFolder);
+//    }
+//    if (Directory.Exists(fileFolder))
+//    {
+//        var files = Directory.GetFiles(Environment.CurrentDirectory, "*.jpg"); // добавление
+//        foreach (var file in files)
+//        {
+//            var link = await api.Files.GetUploadLinkAsync("/" + fileFolder + "/" + Path.GetFileName(file), overwrite: false); // без перезаписи
+//            Console.WriteLine(link);
+//            using (var fileStream = File.OpenRead(file))
+//            {
+//                await api.Files.UploadAsync(link, fileStream);
+//            }
+//        }
+//    }
+//}
 
-var clientApi = new DiskHttpApi("y0__xDrtJkFGLijNiCk6JPNEvRjUsH5le-oyOMziushmDklJQl0");
 
 //var rootFolder = await clientApi.MetaInfo.GetInfoAsync(new ResourceRequest
 //{
@@ -52,6 +51,10 @@ var clientApi = new DiskHttpApi("y0__xDrtJkFGLijNiCk6JPNEvRjUsH5le-oyOMziushmDkl
 //        Console.WriteLine($"{item.Name,-25}\t\t{item.Type,-10}\t{item.MimeType,-10}\t\t{item.Created:yyyy-MM-dd}");
 //    }
 //}
+
+
+var clientApi = new DiskHttpApi("y0__xDrtJkFGLijNiCk6JPNEvRjUsH5le-oyOMziushmDklJQl0");
+
 async Task ProcessFolderAsync(IDiskApi clientApi, string path, string indent = "")
 {
     try
